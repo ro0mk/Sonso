@@ -67,9 +67,12 @@ body {
 
 .memoriesCard img {
     width: 100%;
+    height: 250px; /* ou outro valor fixo, tipo 200px */
+    object-fit: cover; /* garante que a imagem preenche sem distorcer */
     border-radius: 10px;
     margin-bottom: 1rem;
 }
+
 
 .memoriesCardTitle {
     font-size: 1.3rem;
