@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+:root {
+    --primary: #243447;
+    --secondary: #34495e;
+    --accent: #00BFFF;
+    --font: #ffffff;
+    --card-bg: #3c5a6a;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--primary);
+    color: var(--font);
+    padding: 2rem;
+}
+
+.memoriesHeading, .memoriesCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.memoriesHeading {
+    padding: 2rem;
+    text-align: center;
+}
+
+.memoriesHeading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.memoriesHeadingDecoration {
+    width: 3rem;
+    height: 0.4rem;
+    border-radius: 12px;
+    background-color: var(--accent);
+    margin: auto;
+}
+
+.memoriesCardContainer {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.memoriesCard {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.memoriesCard:hover {
+    transform: translateY(-5px);
+}
+
+.memoriesCard img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.memoriesCardTitle {
+    font-size: 1.3rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.memoriesCardText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #d6e3ec;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+    .memoriesCardContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .memoriesCard {
+        margin: 1rem;
+    }
+}
